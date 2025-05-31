@@ -1,0 +1,71 @@
+               precision    recall  f1-score   support
+
+   chenhaonan       1.00      1.00      1.00         1
+ chenhongshan       1.00      1.00      1.00         1
+  chenmingyan       1.00      1.00      1.00         1
+   chenwenhan       0.00      0.00      0.00         1
+  chenxintong       1.00      1.00      1.00         1
+    chenxinyu       1.00      1.00      1.00         1
+       chenyi       1.00      1.00      1.00         1
+    chenziyan       1.00      1.00      1.00         1
+     congqian       1.00      1.00      1.00         1
+    dingfanyi       1.00      1.00      1.00         1
+    fansiheng       1.00      1.00      1.00         1
+   guokaiyang       1.00      1.00      1.00         1
+      heruoxi       1.00      1.00      1.00         1
+   huangjinyu       1.00      1.00      1.00         1
+  huangkaixin       1.00      1.00      1.00         1
+ huangtianshu       1.00      1.00      1.00         1
+  huangwenwen       1.00      1.00      1.00         1
+ huangyanbing       1.00      1.00      1.00         1
+  huangyiqing       1.00      1.00      1.00         1
+huangzhengkui       1.00      1.00      1.00         1
+        jinqi       1.00      1.00      1.00         1
+       licong       1.00      1.00      1.00         1
+      linzhuo       0.00      0.00      0.00         1
+     lishuhao       1.00      1.00      1.00         1
+     liuyiran       0.00      0.00      0.00         1
+    liuyuxuan       1.00      1.00      1.00         1
+      lixiang       1.00      1.00      1.00         1
+    lizhuoxun       1.00      1.00      1.00         1
+    luoyiping       0.00      0.00      0.00         1
+  lvchuangxin       1.00      1.00      1.00         1
+      lvkukai       1.00      1.00      1.00         1
+     machikai       1.00      1.00      1.00         1
+    maoliuiyi       1.00      1.00      1.00         1
+    mashijing       1.00      1.00      1.00         1
+     mouyuxin       1.00      1.00      1.00         1
+     niziheng       1.00      1.00      1.00         1
+    panjunlei       1.00      1.00      1.00         1
+   panpiaoyao       1.00      1.00      1.00         1
+   panyanzhou       1.00      1.00      1.00         1
+penghuaisheng       1.00      1.00      1.00         1
+  renxuanlang       1.00      1.00      1.00         1
+ shenzhengjie       1.00      1.00      1.00         1
+     tangboyi       0.33      1.00      0.50         1
+     tushuoyi       1.00      1.00      1.00         1
+    wangbowen       1.00      1.00      1.00         1
+       wangce       1.00      1.00      1.00         1
+  wanghaodong       1.00      1.00      1.00         1
+   wangweihan       1.00      1.00      1.00         1
+    wangzheng       1.00      1.00      1.00         1
+     wuhaomin       1.00      1.00      1.00         1
+      wurunze       1.00      1.00      1.00         1
+       xuyuan       1.00      1.00      1.00         1
+   yangyitong       1.00      1.00      1.00         1
+     yedashan       1.00      1.00      1.00         1
+     yexunhui       0.50      1.00      0.67         1
+    yixiaohui       1.00      1.00      1.00         1
+     yuefeiyu       1.00      1.00      1.00         1
+     yuyongqi       1.00      1.00      1.00         1
+    yuzhichao       1.00      1.00      1.00         1
+ zengpengshuo       1.00      1.00      1.00         1
+ zhangbingyao       1.00      1.00      1.00         1
+  zhangshuang       1.00      1.00      1.00         1
+   zhangyufei       1.00      1.00      1.00         1
+     zhouzice       1.00      1.00      1.00         1
+    zhujiabao       0.50      1.00      0.67         1
+
+     accuracy                           0.94        65
+    macro avg       0.91      0.94      0.92        65
+ weighted avg       0.91      0.94      0.92        65

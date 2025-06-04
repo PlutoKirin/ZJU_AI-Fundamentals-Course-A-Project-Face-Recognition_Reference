@@ -9,23 +9,18 @@ import os
 import time
 from scipy.spatial import distance as dist
 
-# === 配置 ===
 ATTENDANCE_FOLDER = "attendance_results"  # 签到结果文件夹
 os.makedirs(ATTENDANCE_FOLDER, exist_ok=True)  # 自动创建文件夹
 
-# 模型路径（与脚本同目录）
 SHAPE_PREDICTOR_PATH = "shape_predictor_68_face_landmarks.dat"
 FACE_ENCODER_PATH = "dlib_face_recognition_resnet_model_v1.dat"
 
-# 评估图片路径
 EVALUATION_FOLDER = "evaluation"
 CONFUSION_MATRIX_PATH = os.path.join(EVALUATION_FOLDER, "confusion_matrix.png")
 METRICS_PATH = os.path.join(EVALUATION_FOLDER, "metrics.png")
 
 
-# 检查评估图片是否存在
 def check_evaluation_images():
-    """检查评估图片是否存在，不存在则返回None"""
     images = {}
     for name, path in [("confusion_matrix", CONFUSION_MATRIX_PATH),
                        ("metrics", METRICS_PATH)]:
@@ -56,16 +51,14 @@ except (FileNotFoundError, pickle.UnpicklingError) as e:
     print(f"警告：无法加载人脸特征数据库 - {str(e)}")
     print("所有人脸将被识别为'Unknown'")
 
-# 设定阈值（可调整）
 RECOGNITION_THRESHOLD = 0.45
 
-# === 签到系统状态 ===
+# 签到系统状态
 signed_names = set()  # 已签到人员集合
 attendance_records = []  # 签到记录
 is_signing_active = False  # 签到系统是否激活
 
 
-# === 工具函数 ===
 def eye_aspect_ratio(eye):
     A = dist.euclidean(eye[1], eye[5])
     B = dist.euclidean(eye[2], eye[4])
@@ -121,7 +114,7 @@ def get_signed_names_text():
     return "\n".join([f"{i + 1}. {name}" for i, name in enumerate(sorted(signed_names))])
 
 
-# === 人脸识别函数 ===
+# 人脸识别函数
 def recognize_face(frame, threshold=RECOGNITION_THRESHOLD):
     """通用人脸识别函数，返回识别结果并保留标注"""
     if frame is None or frame.size == 0:

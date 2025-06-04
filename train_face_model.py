@@ -240,10 +240,6 @@ def evaluate_model(name_features, test_features, threshold=0.45,output_dir="eval
     save_metrics_image(metrics, os.path.join(output_dir, "metrics.png"))
 
 
-# 使用示例
 if __name__ == "__main__":
-# 假设已经通过extract_face_features获取了特征
     name_features, test_features = extract_face_features("Face_Detection_Dataset", 0.2)
-
-# 评估模型
     results = evaluate_model(name_features, test_features)
